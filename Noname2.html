@@ -15,11 +15,14 @@
 <script>
 
 function  func(e){
-alert(e.target.innerHTML)
+	if(e.target.innerHTML == "按钮2")
+	{
+	alert("发财");
+	}
 }
  var btns=document.getElementsByTagName("button");
 
- btns[0].onclick = func;
+btns[0].onclick = func;
 btns[1].onclick = func;
 btns[2].onclick = func;
 </script>
